@@ -1,0 +1,13 @@
+
+server:
+  port: 8082
+  servlet:
+    session:
+      timeout: 30s
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
