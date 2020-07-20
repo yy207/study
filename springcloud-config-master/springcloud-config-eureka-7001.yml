@@ -1,0 +1,38 @@
+spring:
+  profiles:
+    active:
+    - dev
+
+#config开发客户端配置信息
+---
+server:
+  port: 7001
+
+spring: 
+  profiles: dev
+  application: 
+    name: springcloud-config-eureka
+
+eureka:
+  instance:
+    hostname: 127.0.0.1 #eureka服务端的实例名称
+  client: 
+    service-url: 
+      defaultZone: http://127.0.0.1:7001/eureka/
+
+#config测试客户端配置信息
+---
+server: 
+  prot: 7001
+
+spring: 
+  profiles: test
+  application: 
+    name: springcloud-config-eureka
+
+eureka:
+  instance:
+    hostname: 127.0.0.1 #eureka服务端的实例名称
+  client: 
+    service-url: 
+      defaultZone: http://127.0.0.1:7001/eureka/
