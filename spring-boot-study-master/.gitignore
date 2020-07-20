@@ -1,0 +1,14 @@
+.idea/
+*.iml
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+*/target/
+
+
+.DS_Store
+

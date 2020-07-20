@@ -1,0 +1,19 @@
+server:
+  port: 12741
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mappers/*Mapper.xml
+
+spring:
+  datasource:
+    name: sv
+    url: jdbc:sqlserver://localhost:1433;DatabaseName=quartz
+    username: sa
+    password: sa123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+
